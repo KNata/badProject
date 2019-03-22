@@ -166,25 +166,22 @@ public class BookDAO implements AbstractDAO<Book, Integer> {
         try {
             conn = ConnectionPool.getConnection();
             conn.setAutoCommit(false);
-            preparedStatement = conn.prepareStatement(SELECT_ALL_SQL);
+            preparedStatement = conn.prepareStatement(SELECT_BY_TITLE_SQL);
             ResultSet resultSet = preparedStatement.executeQuery();
             while (resultSet.next()) {
                 String title = resultSet.getString("title");
-                if (title.equals(aTitle)) {
-                    String isbn = resultSet.getString("isbn");
-                    String author = resultSet.getString("author");
-                    String annotation = resultSet.getString("annotation");
-                    String location = resultSet.getString("location");
-                    Date yearOfPublishing = resultSet.getDate("year_of_publishing");
-                    int bookCount = resultSet.getInt("book_count");
-                    //String keyWords = resultSet.getString("key_words");
-                    Book theBook = Book.newBuilder().setIsbn(isbn).setAuthor(author).setTitle(title)
-                            .setAnnotation(annotation).setBookCount(bookCount).setYearOfPublishing(yearOfPublishing)
+                String isbn = resultSet.getString("isbn");
+                String author = resultSet.getString("author");
+                String annotation = resultSet.getString("annotation");
+                String location = resultSet.getString("location");
+                Date yearOfPublishing = resultSet.getDate("year_of_publishing");
+                int bookCount = resultSet.getInt("book_count");
+                //String keyWords = resultSet.getString("key_words");
+                Book theBook = Book.newBuilder().setIsbn(isbn).setAuthor(author).setTitle(title)
+                        .setAnnotation(annotation).setBookCount(bookCount).setYearOfPublishing(yearOfPublishing)
                             .setBookLocation(location).setKeyWordsList(null).build();
-                    bookList.add(theBook);
-                } else {
-                    theLogger.info("The book with " + aTitle + "wasn't found in the library");
-                }
+                bookList.add(theBook);
+
             }
         } catch (SQLException e) {
             theLogger.error(e.getMessage());
