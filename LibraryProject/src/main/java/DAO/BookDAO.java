@@ -167,6 +167,7 @@ public class BookDAO implements AbstractDAO<Book, Integer> {
             conn = ConnectionPool.getConnection();
             conn.setAutoCommit(false);
             preparedStatement = conn.prepareStatement(SELECT_BY_TITLE_SQL);
+            preparedStatement.setString(1, aTitle);
             ResultSet resultSet = preparedStatement.executeQuery();
             while (resultSet.next()) {
                 String title = resultSet.getString("title");
