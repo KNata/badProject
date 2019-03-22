@@ -1,7 +1,6 @@
 package DAO;
 
 import DB_Connection.ConnectionPool;
-import Model.Book;
 import Model.Reader;
 import org.apache.log4j.Logger;
 
@@ -9,7 +8,7 @@ import java.sql.*;
 import java.util.ArrayList;
 import java.util.List;
 
-public class ReaderDAO implements AbstractDAO<Reader, Integer> {
+public class ReaderDAO implements AbstractDAO<Reader, String> {
 
     private static final String INSERT_SQL = "INSERT INTO Reader VALUES(?, ?, ?, ?, ?, ?)";
 
@@ -48,7 +47,7 @@ public class ReaderDAO implements AbstractDAO<Reader, Integer> {
             conn = ConnectionPool.getConnection();
             conn.setAutoCommit(false);
             preparedStatement = conn.prepareStatement(INSERT_SQL);
-            preparedStatement.setInt(1, anItem.getReaderCard());
+            preparedStatement.setString(1, anItem.getReaderCard());
             preparedStatement.setString(2, anItem.getReaderName());
             preparedStatement.setString(3, anItem.getEmail());
             preparedStatement.setString(4, anItem.getPassword());
@@ -82,7 +81,7 @@ public class ReaderDAO implements AbstractDAO<Reader, Integer> {
     }
 
     @Override
-    public boolean deleteItem(Integer itemID) {
+    public boolean deleteItem(String itemID) {
         boolean wasDeleted = false;
         if (itemID == null) {
             wasDeleted = false;
@@ -94,7 +93,7 @@ public class ReaderDAO implements AbstractDAO<Reader, Integer> {
             conn = ConnectionPool.getConnection();
             conn.setAutoCommit(false);
             preparedStatement = conn.prepareStatement(DELETE_READER_SQL);
-            preparedStatement.setInt(1, itemID);
+            preparedStatement.setString(1, itemID);
             preparedStatement.executeUpdate();
             wasDeleted = true;
             savePoint = conn.setSavepoint();
@@ -132,7 +131,7 @@ public class ReaderDAO implements AbstractDAO<Reader, Integer> {
             preparedStatement = conn.prepareStatement(SELECT_ALL_SQL);
             ResultSet resultSet = preparedStatement.executeQuery();
             while (resultSet.next()) {
-                int readerCard = resultSet.getInt("reader_card");
+                String readerCard = resultSet.getString("reader_card");
                 String readerName = resultSet.getString("name");
                 String email = resultSet.getString("email");
                 String password = resultSet.getString("password");
@@ -168,7 +167,7 @@ public class ReaderDAO implements AbstractDAO<Reader, Integer> {
             preparedStatement.setString(1, anEmail);
             ResultSet resultSet = preparedStatement.executeQuery();
             while (resultSet.next()) {
-                int readerCard = resultSet.getInt("reader_card");
+                String readerCard = resultSet.getString("reader_card");
                 String readerName = resultSet.getString("name");
                 String email = resultSet.getString("email");
                 String password = resultSet.getString("password");
@@ -193,17 +192,17 @@ public class ReaderDAO implements AbstractDAO<Reader, Integer> {
         return theReader;
     }
 
-    public Reader findItemByReaderCard(Integer aReaderCard) {
+    public Reader findItemByReaderCard(String aReaderCard) {
         Connection conn = null;
         PreparedStatement preparedStatement = null;
         Reader theReader = null;
         try {
             conn = ConnectionPool.getConnection();
             preparedStatement = conn.prepareStatement(SELECT_BY_READER_CARD_SQL);
-            preparedStatement.setInt(1, aReaderCard);
+            preparedStatement.setString(1, aReaderCard);
             ResultSet resultSet = preparedStatement.executeQuery();
             while (resultSet.next()) {
-                int readerCard = resultSet.getInt("reader_card");
+                String readerCard = resultSet.getString("reader_card");
                 String readerName = resultSet.getString("name");
                 String email = resultSet.getString("email");
                 String password = resultSet.getString("password");
@@ -228,17 +227,17 @@ public class ReaderDAO implements AbstractDAO<Reader, Integer> {
         return theReader;
     }
 
-    public Reader findItemByReaderName(Integer aReaderName) {
+    public Reader findItemByReaderName(String aReaderName) {
         Connection conn = null;
         PreparedStatement preparedStatement = null;
         Reader theReader = null;
         try {
             conn = ConnectionPool.getConnection();
             preparedStatement = conn.prepareStatement(SELECT_BY_NAME_SQL);
-            preparedStatement.setInt(1, aReaderName);
+            preparedStatement.setString(1, aReaderName);
             ResultSet resultSet = preparedStatement.executeQuery();
             while (resultSet.next()) {
-                int readerCard = resultSet.getInt("reader_card");
+                String readerCard = resultSet.getString("reader_card");
                 String readerName = resultSet.getString("name");
                 String email = resultSet.getString("email");
                 String password = resultSet.getString("password");

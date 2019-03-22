@@ -4,7 +4,7 @@ import java.util.Objects;
 
 public class Reader {
 
-    private int readerCard;
+    private String readerCard;
     private String readerName;
     private String email;
     private String password;
@@ -17,7 +17,7 @@ public class Reader {
         return new Reader().new Builder();
     }
 
-    public int getReaderCard() {
+    public String getReaderCard() {
         return readerCard;
     }
 
@@ -67,7 +67,7 @@ public class Reader {
     public int hashCode() {
         final int prime = 31;
         int result = 1;
-        result = prime * result + readerCard;
+        result = prime * result + ((readerCard == null) ? 0 :  readerCard.hashCode());
         result = prime * result + ((readerName == null) ? 0 :  readerName.hashCode());
         result = prime * result + ((address == null) ? 0 : address.hashCode());
         result = prime * result + ((city == null) ? 0 : city.hashCode());
@@ -96,7 +96,7 @@ public class Reader {
         private Builder() {
         }
 
-        public Builder setReaderCard(int aReaderCard) {
+        public Builder setReaderCard(String aReaderCard) {
             readerCard = aReaderCard;
             return this;
         }

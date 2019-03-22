@@ -24,31 +24,27 @@
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="JAVA" value="28" />
+          <entry key="JAVA" value="36" />
           <entry key="Properties" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="5476" />
+          <entry key="JAVA" value="5999" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/DAO/BookDAO.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="636">
-              <caret line="169" column="49" selection-start-line="169" selection-start-column="49" selection-end-line="169" selection-end-column="49" />
+            <state relative-caret-position="486">
+              <caret line="117" column="24" lean-forward="true" selection-start-line="82" selection-start-column="8" selection-end-line="117" selection-end-column="24" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="method#newItem#0;class#BookDAO#0" />
-                <element signature="method#findAllItems#0;class#BookDAO#0" />
-                <element signature="e#3107#3113#0" expanded="true" />
                 <element signature="method#deleteItem#0;class#BookDAO#0" />
-                <element signature="e#6450#6456#0" expanded="true" />
                 <element signature="method#updateBookChangingItsCount#0;class#BookDAO#0" />
                 <element signature="method#updateBookLocation#0;class#BookDAO#0" />
                 <element signature="method#updateBookLocationAndBookCount#0;class#BookDAO#0" />
@@ -58,23 +54,32 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/DAO/CatalogDAO.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-984">
+              <caret line="3" selection-start-line="3" selection-end-line="3" />
+              <folding>
+                <element signature="method#newItem#0;class#CatalogDAO#0" />
+                <element signature="method#findAllItems#0;class#CatalogDAO#0" />
+                <element signature="e#2751#2762#0" expanded="true" />
+                <element signature="e#2770#2771#0" expanded="true" />
+                <element signature="e#2820#2821#0" expanded="true" />
+                <element signature="e#4447#4458#0" expanded="true" />
+                <element signature="e#6145#6156#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/DAO/ReaderDAO.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="330">
-              <caret line="22" column="32" lean-forward="true" selection-start-line="22" selection-end-line="23" />
+              <caret line="204" column="55" selection-start-line="204" selection-start-column="55" selection-end-line="204" selection-end-column="55" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="method#newItem#0;class#ReaderDAO#0" />
-                <element signature="method#deleteItem#0;class#ReaderDAO#0" />
-                <element signature="method#findAllItems#0;class#ReaderDAO#0" />
-                <element signature="e#4752#4760#0" expanded="true" />
-                <element signature="method#findItemByEmail#0;class#ReaderDAO#0" />
-                <element signature="method#findItemByReaderCard#0;class#ReaderDAO#0" />
-                <element signature="method#findItemByReaderName#0;class#ReaderDAO#0" />
-                <element signature="method#updatePasswod#0;class#ReaderDAO#0" />
                 <element signature="method#updateEmail#0;class#ReaderDAO#0" />
                 <element signature="method#updateCity#0;class#ReaderDAO#0" />
-                <element signature="method#updateRole#0;class#ReaderDAO#0" />
                 <element signature="method#updateEmailAndCityAndRoleAndPhoneNumber#0;class#ReaderDAO#0" />
               </folding>
             </state>
@@ -82,27 +87,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/DAO/AbstractDAO.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/Model/BookOrder.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
-              <caret line="6" column="14" selection-start-line="6" selection-start-column="14" selection-end-line="6" selection-end-column="14" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/DAO/CatalogDAO.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-9">
-              <caret line="6" column="5" selection-start-line="6" selection-start-column="5" selection-end-line="6" selection-end-column="5" />
-              <folding>
-                <element signature="e#1085#1086#0" expanded="true" />
-                <element signature="e#1113#1114#0" expanded="true" />
-                <element signature="e#1172#1173#0" expanded="true" />
-                <element signature="e#1199#1200#0" expanded="true" />
-                <element signature="e#1260#1261#0" expanded="true" />
-                <element signature="e#1288#1289#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="494">
+              <caret line="105" column="38" selection-start-line="105" selection-start-column="23" selection-end-line="105" selection-end-column="38" />
             </state>
           </provider>
         </entry>
@@ -128,13 +116,13 @@
         <option value="$PROJECT_DIR$/src/main/java/DB_Connection/ConnectionPoolImp.java" />
         <option value="$PROJECT_DIR$/src/main/java/DB_Connection/ConnectionPool.java" />
         <option value="$PROJECT_DIR$/src/main/resources/database.properties.properties" />
-        <option value="$PROJECT_DIR$/src/main/java/Model/BookOrder.java" />
         <option value="$PROJECT_DIR$/src/main/java/Model/Book.java" />
-        <option value="$PROJECT_DIR$/src/main/java/Model/Reader.java" />
-        <option value="$PROJECT_DIR$/src/main/java/DAO/ReaderDAO.java" />
         <option value="$PROJECT_DIR$/src/main/java/DAO/AbstractDAO.java" />
-        <option value="$PROJECT_DIR$/src/main/java/DAO/CatalogDAO.java" />
         <option value="$PROJECT_DIR$/src/main/java/DAO/BookDAO.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Model/Reader.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Model/BookOrder.java" />
+        <option value="$PROJECT_DIR$/src/main/java/DAO/CatalogDAO.java" />
+        <option value="$PROJECT_DIR$/src/main/java/DAO/ReaderDAO.java" />
       </list>
     </option>
   </component>
@@ -251,12 +239,12 @@
       <workItem from="1553113613474" duration="4045000" />
       <workItem from="1553151909335" duration="71000" />
       <workItem from="1553205015914" duration="5324000" />
-      <workItem from="1553253188428" duration="11421000" />
+      <workItem from="1553253188428" duration="14808000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="31951000" />
+    <option name="totallyTimeSpent" value="35338000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1366" height="768" extended-state="0" />
@@ -356,64 +344,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Model/BookOrder.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
-          <folding>
-            <element signature="e#260#261#0" expanded="true" />
-            <element signature="e#287#288#0" expanded="true" />
-            <element signature="e#230#231#0" expanded="true" />
-            <element signature="e#257#258#0" expanded="true" />
-            <element signature="e#290#291#0" expanded="true" />
-            <element signature="e#319#320#0" expanded="true" />
-            <element signature="e#354#355#0" expanded="true" />
-            <element signature="e#387#388#0" expanded="true" />
-            <element signature="e#422#423#0" expanded="true" />
-            <element signature="e#455#456#0" expanded="true" />
-            <element signature="e#490#491#0" expanded="true" />
-            <element signature="e#524#525#0" expanded="true" />
-            <element signature="e#2974#2975#0" expanded="true" />
-            <element signature="e#3019#3020#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/Model/Book.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1155">
           <caret line="95" column="35" selection-start-line="95" selection-start-column="35" selection-end-line="95" selection-end-column="35" />
           <folding>
             <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Model/Reader.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/DAO/ReaderDAO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="22" column="32" lean-forward="true" selection-start-line="22" selection-end-line="23" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#newItem#0;class#ReaderDAO#0" />
-            <element signature="method#deleteItem#0;class#ReaderDAO#0" />
-            <element signature="method#findAllItems#0;class#ReaderDAO#0" />
-            <element signature="e#4752#4760#0" expanded="true" />
-            <element signature="method#findItemByEmail#0;class#ReaderDAO#0" />
-            <element signature="method#findItemByReaderCard#0;class#ReaderDAO#0" />
-            <element signature="method#findItemByReaderName#0;class#ReaderDAO#0" />
-            <element signature="method#updatePasswod#0;class#ReaderDAO#0" />
-            <element signature="method#updateEmail#0;class#ReaderDAO#0" />
-            <element signature="method#updateCity#0;class#ReaderDAO#0" />
-            <element signature="method#updateRole#0;class#ReaderDAO#0" />
-            <element signature="method#updateEmailAndCityAndRoleAndPhoneNumber#0;class#ReaderDAO#0" />
           </folding>
         </state>
       </provider>
@@ -425,35 +361,63 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/DAO/CatalogDAO.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/Model/Reader.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-9">
-          <caret line="6" column="5" selection-start-line="6" selection-start-column="5" selection-end-line="6" selection-end-column="5" />
+        <state relative-caret-position="150">
+          <caret line="10" column="19" lean-forward="true" selection-start-line="10" selection-start-column="19" selection-end-line="10" selection-end-column="19" />
           <folding>
-            <element signature="e#1085#1086#0" expanded="true" />
-            <element signature="e#1113#1114#0" expanded="true" />
-            <element signature="e#1172#1173#0" expanded="true" />
-            <element signature="e#1199#1200#0" expanded="true" />
-            <element signature="e#1260#1261#0" expanded="true" />
-            <element signature="e#1288#1289#0" expanded="true" />
+            <element signature="e#410#411#0" expanded="true" />
+            <element signature="e#443#444#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/DAO/BookDAO.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="636">
-          <caret line="169" column="49" selection-start-line="169" selection-start-column="49" selection-end-line="169" selection-end-column="49" />
+        <state relative-caret-position="486">
+          <caret line="117" column="24" lean-forward="true" selection-start-line="82" selection-start-column="8" selection-end-line="117" selection-end-column="24" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="method#newItem#0;class#BookDAO#0" />
-            <element signature="method#findAllItems#0;class#BookDAO#0" />
-            <element signature="e#3107#3113#0" expanded="true" />
             <element signature="method#deleteItem#0;class#BookDAO#0" />
-            <element signature="e#6450#6456#0" expanded="true" />
             <element signature="method#updateBookChangingItsCount#0;class#BookDAO#0" />
             <element signature="method#updateBookLocation#0;class#BookDAO#0" />
             <element signature="method#updateBookLocationAndBookCount#0;class#BookDAO#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Model/BookOrder.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="494">
+          <caret line="105" column="38" selection-start-line="105" selection-start-column="23" selection-end-line="105" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/DAO/CatalogDAO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-984">
+          <caret line="3" selection-start-line="3" selection-end-line="3" />
+          <folding>
+            <element signature="method#newItem#0;class#CatalogDAO#0" />
+            <element signature="method#findAllItems#0;class#CatalogDAO#0" />
+            <element signature="e#2751#2762#0" expanded="true" />
+            <element signature="e#2770#2771#0" expanded="true" />
+            <element signature="e#2820#2821#0" expanded="true" />
+            <element signature="e#4447#4458#0" expanded="true" />
+            <element signature="e#6145#6156#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/DAO/ReaderDAO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="204" column="55" selection-start-line="204" selection-start-column="55" selection-end-line="204" selection-end-column="55" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#updateEmail#0;class#ReaderDAO#0" />
+            <element signature="method#updateCity#0;class#ReaderDAO#0" />
+            <element signature="method#updateEmailAndCityAndRoleAndPhoneNumber#0;class#ReaderDAO#0" />
           </folding>
         </state>
       </provider>

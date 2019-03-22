@@ -73,13 +73,13 @@ SET SQL_MODE=@OLD_SQL_MODE;
 SET FOREIGN_KEY_CHECKS=@OLD_FOREIGN_KEY_CHECKS;
 SET UNIQUE_CHECKS=@OLD_UNIQUE_CHECKS;
 
-INSERT INTO Reader VALUES(1234-5555-6544, "Natalia Kiselyk", "nk@gmail.com","1234",0938258539,"Kyiv", "ADMIN");
-INSERT INTO Reader VALUES (6788-9877-3244, "Anita Borg", "banita@gmail.com", "qwwqq12", 0897654567, "Lviv", "READER");
-INSERT INTO Reader VALUES(5768-0990-0000, "Stephan Korolko", "korolko@gmail.com", "uy788", 012345439, "Dnipro", "READER");
-INSERT INTO Reader VALUES(8959-9889-1111,"Oksana Frankiv", "oks_frankiv@gmail.com", "tt2111@", 0684356212, "Odessa", "READER");
-INSERT INTO Reader VALUES(7688-7583-9999, "Orest Vatamanuk", "vatamaniuk@gmail.com", "7584", 0634567321, "Kharkiv", "READER");
-INSERT INTO Reader VALUES(1234-5678-9000, "Steve Jobs", "s_jobs@gmail.com", "12wqqq", 0667895432, "Palo Alto", "READER");
-INSERT INTO Reader VALUES(8809-0545-3000, "Halyna Voronina", "voronina_h@gmail.com", "rt4678", 0934567298, "Kyiv", "READER");
+INSERT INTO Reader VALUES("1234-5555-6544", "Natalia Kiselyk", "nk@gmail.com","1234",0938258539,"Kyiv", "ADMIN");
+INSERT INTO Reader VALUES ("6788-9877-3244", "Anita Borg", "banita@gmail.com", "qwwqq12", 0897654567, "Lviv", "READER");
+INSERT INTO Reader VALUES("5768-0990-0000", "Stephan Korolko", "korolko@gmail.com", "uy788", 012345439, "Dnipro", "READER");
+INSERT INTO Reader VALUES("8959-9889-1111","Oksana Frankiv", "oks_frankiv@gmail.com", "tt2111@", 0684356212, "Odessa", "READER");
+INSERT INTO Reader VALUES("7688-7583-9999", "Orest Vatamanuk", "vatamaniuk@gmail.com", "7584", 0634567321, "Kharkiv", "READER");
+INSERT INTO Reader VALUES("1234-5678-9000", "Steve Jobs", "s_jobs@gmail.com", "12wqqq", 0667895432, "Palo Alto", "READER");
+INSERT INTO Reader VALUES("8809-0545-3000", "Halyna Voronina", "voronina_h@gmail.com", "rt4678", 0934567298, "Kyiv", "READER");
 
 INSERT INTO Book VALUES("978-5-699-42553-2", "Gaston Leroux", "Phantom of the Opera", "On a stormy winter night a small plane bound for Boston goes down.", "G-1", "2017-06-15", 5, "phantom, novel, opera, Christine, Erik, Raule"); 
 INSERT INTO Book VALUES("978-1640080447", "Vivian Schilling", "Quietus", "This eBook is for the use of anyone anywhere at no cost and with
@@ -90,11 +90,11 @@ INSERT INTO Book VALUES("978-617-585145-6", "Ліна Костенко", "Мар
 INSERT INTO Book VALUES("978-617-679-391-2", "Ернест Хемінгвей", "Старий і море", "«Старий і море» — повість-притча американського письменника Ернеста Гемінґвея видана у 1952 році.", "Г-3", "2019-01-23", 7, "Сантьяго, море, рибак, здобич"); 
 INSERT INTO Book VALUES("978-966-14-9952-22", "Джон Фаулз", "Коханка французького лейтенанта", "Джон Фаулз — уникальный писатель в литературе XX в", "Ф-23", "1963-09-09", 17, "чиновник, колекціонер");
 
-INSERT INTO Book_Order VALUES(1, "978-5-699-42553-2", 1234-5555-6544, "2018-09-12", "2018-10-12", 31);
-INSERT INTO Book_Order VALUES(2, "978-617-585145-6", 1234-5555-6544, "2019-01-21", null, 0);
-INSERT INTO Book_Order VALUES(3, "978-966-14-9952-1", 8959-9889-1111, "2018-12-12", "2018-09-24", 20);
-INSERT INTO Book_Order VALUES(4, "978-943-14-1252-2", 8809-0545-3000, "2019-02-01", "2019-02-21", 20);
-INSERT INTO Book_Order VALUES(5, "978-617-679-391-2", 7688-7583-9999, "2018-04-23", null, 0);
-INSERT INTO Book_Order VALUES(6, "978-617-585145-6", 5768-0990-0000, "2019-01-12", "2019-01-15", 3);
-INSERT INTO Book_Order VALUES(7, "978-966-14-9952-1", 8959-9889-1111, "2018-12-12", "2018-01-24", 20);
-INSERT INTO Book_Order VALUES(8, "978-943-14-1252-2", 8809-0545-3000, "2019-02-01", "2019-02-21", 20);
+INSERT INTO Book_Order VALUES(1, "978-5-699-42553-2", "1234-5555-6544", "2018-09-12", "2018-10-12", 31);
+INSERT INTO Book_Order VALUES(2, "978-617-585145-6", "1234-5555-6544", "2019-01-21", null, 0);
+INSERT INTO Book_Order VALUES(3, "978-966-14-9952-1", "8959-9889-1111", "2018-12-12", "2018-09-24", 20);
+INSERT INTO Book_Order VALUES(4, "978-943-14-1252-2", "8809-0545-3000", "2019-02-01", "2019-02-21", 20);
+INSERT INTO Book_Order VALUES(5, "978-617-679-391-2", "7688-7583-9999", "2018-04-23", null, 0);
+INSERT INTO Book_Order VALUES(6, "978-617-585145-6", "5768-0990-0000", "2019-01-12", "2019-01-15", 3);
+INSERT INTO Book_Order VALUES(7, "978-966-14-9952-1", "8959-9889-1111", "2018-12-12", "2018-01-24", 20);
+INSERT INTO Book_Order VALUES(8, "978-943-14-1252-2", "8809-0545-3000", "2019-02-01", "2019-02-21", 20);
