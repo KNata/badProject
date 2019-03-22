@@ -5,7 +5,7 @@ import java.sql.Date;
 
 public class Book {
 
-    private int isbn;
+    private String isbn;
     private String author;
     private String title;
     private String annotation;
@@ -18,7 +18,7 @@ public class Book {
         return new Book().new Builder();
     }
 
-    public int getIsbn() {
+    public String getIsbn() {
         return isbn;
     }
 
@@ -56,7 +56,7 @@ public class Book {
         private Builder() {
         }
 
-        public Builder setIsbn(int anIsbn) {
+        public Builder setIsbn(String anIsbn) {
             isbn = anIsbn;
             return this;
         }
@@ -89,6 +89,11 @@ public class Book {
 
         public Builder setKeyWordsList(ArrayList<String> aKeyWordsList) {
             keyWordsList = aKeyWordsList;
+            return this;
+        }
+
+        public Builder setBookLocation(String aLocation) {
+            ownLocation = aLocation;
             return this;
         }
 

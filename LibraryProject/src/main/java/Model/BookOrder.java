@@ -1,14 +1,20 @@
 package Model;
 
-import java.util.Date;
+import java.sql.Date;
 
 public class BookOrder {
 
+    private int orderID;
     private Book book;
     private Reader reader;
     private Date dateOfLoan;
     private Date returnDate;
     private int howMuchDays;
+
+
+    public int getOrderID() {
+        return orderID;
+    }
 
     public Book getBook() {
         return book;
@@ -43,6 +49,7 @@ public class BookOrder {
                 reader == bookOrder.reader &&
                 dateOfLoan == bookOrder.dateOfLoan &&
                 returnDate == bookOrder.returnDate &&
+                orderID == bookOrder.orderID &&
                 howMuchDays == bookOrder.howMuchDays;
     }
 
@@ -55,12 +62,14 @@ public class BookOrder {
         result = prime * result + ((dateOfLoan == null) ? 0 : dateOfLoan.hashCode());
         result = prime * result + ((returnDate == null) ? 0 : returnDate.hashCode());
         result = prime * result + howMuchDays;
+        result = prime * result + orderID;
         return result;
     }
 
     @Override
     public String toString() {
         return "BookOrder [" +
+                ", orderID = " + orderID +
                 "book = " + book.toString() +
                 ", reader = " + reader.toString() +
                 ", dateOfLoan = " + dateOfLoan +
@@ -72,6 +81,11 @@ public class BookOrder {
     public class Builder {
 
         private Builder() {
+        }
+
+        public Builder setOrderID(int anOrderID) {
+            orderID = anOrderID;
+            return this;
         }
 
         public Builder setBook(Book aBook) {

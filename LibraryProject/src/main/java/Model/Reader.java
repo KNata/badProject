@@ -7,11 +7,11 @@ public class Reader {
     private int readerCard;
     private String readerName;
     private String email;
-    private int password;
+    private String password;
     private int phoneNumber;
     private String address;
     private String city;
-    private ROLE role;
+    private String role;
 
     public static Builder newBuilder() {
         return new Reader().new Builder();
@@ -29,7 +29,7 @@ public class Reader {
         return email;
     }
 
-    public int getPassword() {
+    public String getPassword() {
         return password;
     }
 
@@ -45,7 +45,7 @@ public class Reader {
         return city;
     }
 
-    public ROLE getRole() {
+    public String getRole() {
         return role;
     }
 
@@ -72,7 +72,7 @@ public class Reader {
         result = prime * result + ((address == null) ? 0 : address.hashCode());
         result = prime * result + ((city == null) ? 0 : city.hashCode());
         result = prime * result + phoneNumber;
-        result = prime * result + password;
+        result = prime * result + ((password == null) ? 0 : password.hashCode());
         result = prime * result + ((role == null) ? 0 : role.hashCode());
         return result;
     }
@@ -126,12 +126,12 @@ public class Reader {
             return this;
         }
 
-        public Builder setPassword(int aPassword) {
+        public Builder setPassword(String aPassword) {
             password = aPassword;
             return this;
         }
 
-        public Builder setRole(ROLE aRole) {
+        public Builder setRole(String aRole) {
             role = aRole;
             return this;
         }
